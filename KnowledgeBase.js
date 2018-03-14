@@ -1,11 +1,13 @@
-﻿
-if (typeof jQuery != 'undefined') {
+﻿if (typeof jQuery != 'undefined') {
     // jQuery is loaded => print the version
-    alert(jQuery.fn.jquery);
+    alert('HAA');
     document.addEventListener('click', getNav(), false);
 };
 
-
+function test()
+{
+    alert("aa");
+}
 class Page {
     constructor(name, link, children) {
         this.name = name;
@@ -18,9 +20,9 @@ class Page {
 
 }
 class DIY extends Page {
-    constructor(name, host) {
+    constructor(name, parent) {
         super(name);
-        this.host = host;
+        this.parent = parent;
     }
     talk() {
         alert("Meow, I am " + this.name + "! My host is " + this.host + "!");
