@@ -10,6 +10,8 @@
     <meta name="description" content="This website page will tell you how many people found us.">
     <script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
     <script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.flot.pie.js"></script>
+    <script language="javascript" type="text/javascript" src="PlotPage.js"></script>
     <title>Plot page</title>
 </head>
 <body>
@@ -26,22 +28,13 @@
 
     <section>
         <h2>Plot</h2>
-        <p id="Placeholder" style="width:500px; height:500px;"></p>
+        <p> You wanna contact us? here is a pie chart with the means and chances of finding us IRL </p>
+        <p id="piechart" style="width:500px; height:500px;"></p>
+        <p id="values"> eh </p>
     </section>
 
     <br>
     <footer><a href="#top" class="bookMark">Go to the top of the page.</a>&copy; 2018 Nice stuff that's usually expensive but now cheap DIY! Company</footer>
 </body>
-
-<script type="text/javascript">
-    var data1, data1, options, chart;
-    data1 = [[1, 4], [2, 5], [3, 6], [4, 9], [5, 7], [6, 6], [7, 2], [8, 1], [9, 3]];
-    data = [data1];
-    options = {};
-    $(document).ready(function () {
-        chart1 = $.plot($("#Placeholder"), data, options);
-    })
-
-</script>
 
 </html>
