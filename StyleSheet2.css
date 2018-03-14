@@ -116,31 +116,3 @@ table {
 
 table, th, td { border: 1px solid dimgrey;}
 th { font-style: italic; }
-
-.altCustomMenu {
-    display: none;
-    z-index: 1000;
-    position: absolute;
-    overflow: hidden;
-    border: 1px solid lightseagreen;
-    white-space: nowrap;
-    font-family: Merriweather;
-    background: lightseagreen;
-    color: beige;
-    border-radius: 5px;
-    padding: 0;
-}
-
-.altCustomMenu li 
-{
-    padding: 8px 12px;
-    cursor: pointer;
-    list-style-type: none;
-    transition: all .3s ease;
-    user-select: none;
-}
-
-.altCustomMenu li:hover 
-{
-    color: crimson;
-}

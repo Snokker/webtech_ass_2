@@ -2,22 +2,16 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="StyleSheet2.css">
+        <link rel="stylesheet" type="text/css" href="StyleSheet_web_ass2.css">
         <style> @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow'); </style>
         <meta charset="utf-8" />
         <meta name="keywords" content="about us, who are we, DIY, cheap stuff, make your own expensive stuff">
         <meta name="description" content = "This website page will tell you more about the two super awesome/cute people how made these expensive but very cheap stuff.">
-        <title>About us</title>
         <script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
-        <script type="text/javascript", src="contextMenu.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-
+        <script language="javascript" type="text/javascript" src="ContextMenu2.js"></script>
+        <title>About us</title>
     </head>
     <body>
-        <ul class="custom-menu">
-            <li data-action="first">First thing</li>
-            <li data-action="second">Second thing</li>
-            <li data-action="third">Third thing</li>
-        </ul>
         <header id="top">
             <h1> Nice stuff that's usually expensive but now cheap DIY! </h1>
             <h3> Tired of fancy expensive stuff that you could easily make yourself? Try our tutorials! </h3>
@@ -28,8 +22,21 @@
                 <a href="about.html" class="navLink">  About  </a>
                 <a href="contact.html" class="navLink">  Contact  </a>
             </nav>
-            <section>
+        
+        <nav id="contextMenuContainer">
+            <ul id="contextMenu">
+                <li></li>
+                <li id="makeBold">Make font Bold</li>
+                <li id="makeItalic">Make font Italic</li>
+                <li id="makeColorOne">Make font special color 1</li>
+                <li id="makeColorTwo">Make font special color 2</li>
+                <li id="makeColorThree">Make font special color 3</li>
+                <li id="makeColorFour">Make font special color 4</li>
+                <li id="makeNormal">Make font normal</li>
+            </ul>
+        </nav>
 
+            <section>
                 <h2> About us</h2>
                 <p>
                     Femke and Margriet are like sisters to eachother, they knit together, they cook together, and they go on wild adventures, such as going to the market! Amazing!
